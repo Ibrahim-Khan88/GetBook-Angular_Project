@@ -1,0 +1,129 @@
+
+
+   <!--  header section -->
+   <div style="background-color: red;">
+    <div class="allContainer">
+        <div class="logo" >
+            <img src="../../assets/photo/logo.png"  style="width: 150px; height: 60px;" alt="" />
+        </div>
+
+        <div class="menuicon">
+            <span id="nav-toggle" href="#" (click) = "opennav()"
+                style="color: black; font-size: 24px; text-decoration: none;">
+                &#9776;</span>
+        </div>
+
+
+            <div class="searchContainer">
+                <div class="input-group md-form form-sm form-2 pl-0 searchbtn1">
+                    <input class="form-control my-0 py-1 amber-border searchbtn1"
+                    #searchInput (keyup.enter)='SearchKeyWord(searchInput.value)'   
+                    type="text" placeholder="Search" aria-label="Search" id="search">
+                    <div class="input-group-append searchbtn2" (click)='SearchKeyWord(searchInput.value)' >
+                        <div class="searchbtn3">
+                            <i style="font-size: 24px" class="fa"
+                                style="margin: auto; font-size:20px;">&#xf002;</i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+     
+        <div class="cart">
+            <img src="../../assets/photo/cart.png"  style="width: 30px; height: 30px;" alt="" />
+        </div>
+
+        <div class="productheader">
+            <div class="productlistheader">Product</div>
+            <div class="productunderline"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- staring slide -->
+<div id="mySidenav" class="sidenav" [style.width.px] = "width">
+    <span href="#" class="closebtn" (click) = "closenav()">&times;</span>
+    <div class="insidenavlogo">
+        <img src="../../assets/photo/logo_white.png"
+            style="width: 200px; height: 80px;">
+    </div>
+    <div class="containernav">
+        <div style="width: 200px; height: 2px; background-color: red;">
+        </div>
+        <div class="link">
+            <div class="text" >Home</div>
+        </div>
+        <div style="width: 200px; height: 2px; background-color: red;">
+        </div>
+        <div class="link">
+            <div class="text" >Upload Book</div>
+        </div>
+        <div style="width: 200px; height: 2px; background-color: red;">
+        </div>
+
+
+
+ 
+
+        <div class='link'><div class='text' >Your Account</div></div>
+        <div style='width: 200px; height: 2px; background-color: red;'> </div>
+
+
+        <div class='link'><div class='text' >Logout</div></div>
+        <div style='width: 200px; height: 2px; background-color: red;'> </div>
+
+        <div class='link'><div class='text' >Login</div></div>
+        <div style='width: 200px; height: 2px; background-color: red;'> </div>
+
+
+
+
+        <div class="link" id="click">
+            <div class="text" >Contact</div>
+        </div>
+        <div style="width: 200px; height: 2px; background-color: red;">
+        </div>
+        <div class="link">
+            <div class="text" >Help</div> 
+        </div>
+    </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="loadContainer">
+    <div class="loadSubContainer">
+        <a href="LoadPage"> Load More </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="menu" class="">
+    <ul id="list_ul"
+        ><li class="first one" (click)="showpage('home')">Home</li
+        ><li class="first two" (click)="showpage('upload')">Upload Book</li
+        ><li class="first three" (click)="showpage('contact')">Contact us</li
+        >
+            >
+        <li class="first three"> <input #searchInput (keyup.enter)='SearchKeyWord(searchInput.value)' type="text" placeholder="search" name="search" [(ngModel)]="search">
+            <button mat-button (click)="SearchKeyWord(searchInput.value)">Search</button></li></ul>
+      <div id="list_div"
+    >  </div
+  ></div> -->

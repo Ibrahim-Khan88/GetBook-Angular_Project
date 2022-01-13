@@ -1,0 +1,27 @@
+<section>  
+    <div class='container'>
+        <div class='row'>
+            <div class="col-4" *ngFor="let book of bookArray; let i = index">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                           <img class="productphoto" [src]="book.image_encode">
+                           <h2>Title: {{book.title}}</h2>
+                           <p>Author: {{book.author}}</p>
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <h2>Title: {{book.title}}</h2>
+                                <p> Author: {{book.author}}</p>
+                                <a href="#" class="btn btn-default add-to-cart"><i
+                                    class="fa fa-shopping-cart" (click)="detail(book)"></i>Detail</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+</section> 
+
